@@ -6,3 +6,4 @@ $handle = fopen($file, 'a');
 fputs($handle, "BURP [IP: $ip, UA: $agent\n\n");
 fclose($handle);
 ?>
+ 
