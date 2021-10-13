@@ -1,8 +1,18 @@
-<!DOCTYPE html>
 <html>
 <head>
 </head>
 <body>
-<img src="http://burp/favicon.ico" onload="document.write('You are using burp!')" onerror="document.write('You are not using burp!')" style="display:none">
+<img src="http://burp/favicon.ico"/>
+<script>
+window.addEventListener("load", event => {
+    var image = document.querySelector('img');
+    var isLoaded = image.complete && image.naturalHeight !== 0;
+    if (isLoaded == true) {
+     alert('Burp Suite Detected');
+     console.log('[!] Burp Suite Detected');
+     } else {
+     console.log('[+] No Burp Suite Detected');
+    }
+});
+</script>
 </body>
-</html>
