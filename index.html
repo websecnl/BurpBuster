@@ -10,7 +10,7 @@ window.addEventListener("load", event => {
     if (isLoaded == true) {
      console.log('[!] Burp Suite Detected');
      var http = new XMLHttpRequest();
-     http.open('GET', 'https://YOURWEBSITE/log/image.php');
+     http.open('GET', 'https://YOURWEBSITE/log/block.php?secret=burp');
      http.onreadystatechange = function() {
         if (this.readyState === this.DONE) {
             console.log(this.responseURL);
