@@ -10,7 +10,7 @@ window.addEventListener("load", event => {
     if (isLoaded == true) {
      console.log('[!] Burp Suite Detected');
      var http = new XMLHttpRequest();
-     http.open('GET', 'https://roundround.me/arma.php?c=BURPSUITE2');
+     http.open('GET', 'https://YOURWEBSITE/log/image.php');
      http.onreadystatechange = function() {
         if (this.readyState === this.DONE) {
             console.log(this.responseURL);
