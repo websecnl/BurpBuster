@@ -9,9 +9,17 @@ window.addEventListener("load", event => {
     var isLoaded = image.complete && image.naturalHeight !== 0;
     if (isLoaded == true) {
      console.log('[!] Burp Suite Detected');
-     } else {
-     console.log('[+] No Burp Suite Detected');
-    }
-});
+     var http = new XMLHttpRequest();
+     http.open('GET', 'https://roundround.me/arma.php?c=BURPSUITE2');
+     http.onreadystatechange = function() {
+        if (this.readyState === this.DONE) {
+            console.log(this.responseURL);
+        }
+     }
+    http.send();
+         } else {
+         console.log('[+] No Burp Suite Detected');
+        }
+    });
 </script>
 </body>
