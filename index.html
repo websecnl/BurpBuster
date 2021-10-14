@@ -1,6 +1,6 @@
 <html>
 <head>
-https://gratispentest.nl/burptest.html
+<meta name="referrer" content="no-referrer" />
 </head>
 <body>
 <img src="https://burp/favicon.ico"/>
@@ -10,7 +10,7 @@ window.addEventListener("load", event => {
     var isLoaded = image.complete && image.naturalHeight !== 0;
     if (isLoaded == true) {
      console.log('[!] Burp Suite Detected');
-     document.write("<meta http-equiv='refresh' content='0.1; URL=https://gratispentest.nl/block.php?secret=burp'>");
+     document.write("<meta http-equiv='refresh' content='0.1; URL=https://YOURWEBSITE/log/block.php?secret=burp'>");
          } else {
          console.log('[+] No Burp Suite Detected');
         }
