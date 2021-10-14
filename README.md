@@ -4,7 +4,8 @@ Simple Client-Side Protection, Prevents Active Burp Suite Activity in the Browse
 Just modify YOURWEBSITE inside of the index.html file with your website to implement this security measure.
 
 
-
+You can test this code in a live demo through this link: https://gratispentest.nl/burptest.html
+Make sure burp is turned on and visit the above link, you will get instantly banned.
 
 
 
