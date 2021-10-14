@@ -3,14 +3,14 @@
 <meta name="referrer" content="no-referrer" />
 </head>
 <body>
-<img src="https://burp/favicon.ico"/>
+<img src="https://burp/favicon.ico" id="antiburp"/>
 <script> 
 window.addEventListener("load", event => {
-    var image = document.querySelector('img');
+    var image = document.getElementById('antiburp');
     var isLoaded = image.complete && image.naturalHeight !== 0;
     if (isLoaded == true) {
      console.log('[!] Burp Suite Detected');
-     document.write("<meta http-equiv='refresh' content='0.1; URL=https://YOURWEBSITE/log/block.php?secret=burp'>");
+     document.write("<meta http-equiv='refresh' content='0.1; URL=https://YOURWEBSITE/block.php?secret=burp'>");
          } else {
          console.log('[+] No Burp Suite Detected');
         }
