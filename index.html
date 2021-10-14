@@ -1,22 +1,16 @@
 <html>
 <head>
+https://gratispentest.nl/burptest.html
 </head>
 <body>
-<img src="http://burp/favicon.ico"/>
-<script>
+<img src="https://burp/favicon.ico"/>
+<script> 
 window.addEventListener("load", event => {
     var image = document.querySelector('img');
     var isLoaded = image.complete && image.naturalHeight !== 0;
     if (isLoaded == true) {
      console.log('[!] Burp Suite Detected');
-     var http = new XMLHttpRequest();
-     http.open('GET', 'https://YOURWEBSITE/log/block.php?secret=burp');
-     http.onreadystatechange = function() {
-        if (this.readyState === this.DONE) {
-            console.log(this.responseURL);
-        }
-     }
-    http.send();
+     document.write("<meta http-equiv='refresh' content='0.1; URL=https://gratispentest.nl/block.php?secret=burp'>");
          } else {
          console.log('[+] No Burp Suite Detected');
         }
