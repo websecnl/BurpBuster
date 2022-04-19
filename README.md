@@ -1,5 +1,5 @@
 # BurpBuster
-Simple Client-Side Protection, Prevents Active Burp Suite Activity in the Browser.
+Simple Client-Side Protection, Makes it harder to use Burp Suite.
 
 Just modify YOURWEBSITE inside of the index.html file with your website to implement this security measure.
 
